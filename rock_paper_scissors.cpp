@@ -2,14 +2,12 @@
 #include <random>
 #include <cctype>
 
-
 void rock_paper_scissors() {
 
 	std::cout << "\n\n\t\tROCK-PAPER-SCISSORS\n" << std::endl;
 	std::cout << "======================================================\n\n";
 
 	char user_choice;
-
 
 	do {
 		std::cout << "\nPick : \n\n";
@@ -24,22 +22,13 @@ void rock_paper_scissors() {
 	} while (user_choice != 'r' && user_choice != 'p' && user_choice != 's');
 
 
-
 	// Show the user choice
 	std::cout << "\n1) You chose ";
+
 	switch (user_choice) {
-
-	case 'r':
-		std::cout << "ROCK.\n";
-		break;
-
-	case 'p':
-		std::cout << "PAPER.\n";
-		break;
-
-	case 's':
-		std::cout << "SCISSORS.\n";
-		break;
+        case 'r': std::cout << "ROCK.\n"; break;
+        case 'p': std::cout << "PAPER.\n"; break;
+        case 's': std::cout << "SCISSORS.\n"; break;
 	}
 
 	// computer choice
@@ -51,20 +40,10 @@ void rock_paper_scissors() {
 	std::cout << "2) Computer chose ";
 
 	switch (computer) {
-
-	case 1:
-		std::cout << "ROCK.\n";
-		break;
-
-	case 2:
-		std::cout << "PAPER.\n";
-		break;
-
-	case 3:
-		std::cout << "SCISSORS.\n";
-		break;
+        case 1:	std::cout << "ROCK.\n"; break;
+        case 2: std::cout << "PAPER.\n"; break;
+        case 3: std::cout << "SCISSORS.\n"; break;
 	}
-
 
 	// check winner and tie
 	std::cout << "\n\t\t     RESULTS\n";
@@ -82,6 +61,5 @@ void rock_paper_scissors() {
 	std::cout << "======================================================\n\n";
 
 	std::cout << "\n\n\tThank you for playing.\n\n";
-	std::cout << "\t\t\tCreator: " << "LORVENSFORD\n\n";
+	std::cout << "\t\t\tCreator: " << "EL\n\n";
 }
-

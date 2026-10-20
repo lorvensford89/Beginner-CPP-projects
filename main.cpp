@@ -3,18 +3,7 @@
 #include <limits>
 #include <conio.h>
 
-// Include project headers (10)
-#include "banking.hpp"
-#include "calculator.hpp"
-#include "temp_converter.hpp"
-#include "todo_list.hpp"
-#include "adventure.hpp"
-#include "guessing_number.hpp"
-#include "guessing_word.hpp"
-#include "quiz.hpp"
-#include "tic_tac_toe.hpp"
-#include "rock_paper_scissors.hpp"
-
+#include "header.hpp"
 
 
 int main() {
@@ -22,7 +11,6 @@ int main() {
 	int ch;
 
 	do {
-
 		std::system("cls");
 
 		std::cout << "\n\n\n";
@@ -66,23 +54,22 @@ int main() {
 		// Now handle quitting
 		if (ch == 11) {
 			std::cout << "\n\n\t\t\t\t\tThank you for exploring the EL-PROJECTS.\n";
-			std::cout << "\n\t\t\t\t\t\t\t\t\tCreator: LORVENSFORD\n\n";
+			std::cout << "\n\t\t\t\t\t\t\t\t\tCreator: EL\n\n";
 			break; // exit loop
 		}
 		std::system("cls");
 		
-
 		switch (ch) {
-		case 1: banking(); break;
-		case 2: calculator(); break;
-		case 3: temp_converter(); break;
-		case 4: todo_list(); break;
-		case 5: adventure(); break;
-		case 6: guessing_number(); break;
-		case 7: guessing_word(); break;
-		case 8: quiz(); break;
-		case 9: tic_tac_toe(); break;
-		case 10: rock_paper_scissors(); break;
+            case 1: banking(); break;
+            case 2: calculator(); break;
+            case 3: temp_converter(); break;
+            case 4: todo_list(); break;
+            case 5: adventure(); break;
+            case 6: guessing_number(); break;
+            case 7: guessing_word(); break;
+            case 8: quiz(); break;
+            case 9: tic_tac_toe(); break;
+            case 10: rock_paper_scissors(); break;
 		}
 
 		// Pause before returning to menu
@@ -93,8 +80,6 @@ int main() {
 		}
 
 	} while (ch != 11); 
-
-	
 
 	return 0;
 }

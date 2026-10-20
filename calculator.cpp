@@ -1,16 +1,14 @@
 // I will create a calcultor where there will be 5 operator:
 // +, -, x, /, sqrt
 
-
 #include <iostream>
 #include <vector>
 #include <string>
 #include <cmath>
 #include <limits>
 #include <iomanip>
-#include "functions.hpp"
 
-
+#include "header.hpp"
 
 void calculator() {
 
@@ -18,7 +16,6 @@ void calculator() {
 
 	std::cout << "\n\n              EL - CALCULATOR\n";
 	std::cout << "=====================================================\n\n\n";
-
 
 	std::cout << "There are five (5) operator availble: \n\n";
 	std::vector<std::string> operators = { "+", "-", "x", "/", "sqrt()" };
@@ -46,7 +43,7 @@ void calculator() {
 		user_operator--;
 	} while (user_operator < 0 || user_operator > 4);
 
-	double result = 0;
+	double result{0};
 
 	switch (user_operator) {
 	case 0: {
@@ -121,6 +118,5 @@ void calculator() {
 	}
 	std::cout << "=====================================================\n\n\n";
 	std::cout << "\tThank you for using EL - CALCULATOR\n\n";
-	std::cout << "\t\t\tCreator: " << "LORVENSFORD\n\n";
+	std::cout << "\t\t\tCreator: " << "EL\n\n";
 }
-

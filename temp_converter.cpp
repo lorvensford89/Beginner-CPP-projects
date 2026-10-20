@@ -10,9 +10,8 @@
 #include <iostream>
 #include <iomanip>
 #include <limits>
-#include "functions.hpp"
 
-
+#include "header.hpp"
 
 void temp_converter() {
 
@@ -50,10 +49,8 @@ void temp_converter() {
 			std::cout << "Invalid input!\n";
 			continue;
 		}
-
 		break;
 	}
-
 
 	switch (user_choice) {
 	case 1: {
@@ -120,6 +117,5 @@ void temp_converter() {
 	std::cout << "\n=========================================\n";
 
 	std::cout << "\n\nThank you for using TEMPERATURE CONVERTER\n\n";
-	std::cout << "\t\tCreator: " << "LORVENSFORD\n\n";
+	std::cout << "\t\tCreator: " << "EL\n\n";
 }
-

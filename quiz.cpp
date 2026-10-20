@@ -2,8 +2,6 @@
 // more like 4 answers will be availible and he'll pick one. 
 // There will be a score table at the end
 
-
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -23,7 +21,7 @@ void quiz(){
 
         "What planet is known as the Red Planet?",
         "How many days are there in a leap year?",
-        "Which animal is known as “man’s best friend?”",
+        "Which animal is known as ï¿½manï¿½s best friend?ï¿½",
         "What is the largest ocean on Earth?",
         "What do bees produce?",
         "What color do you get by mixing red and blue?",
@@ -144,8 +142,6 @@ void quiz(){
         'B','B','A','C','C','C','B','B','B','B'
     };
 
-
-
     // Generate random numbers
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -169,8 +165,6 @@ void quiz(){
         }
     }
 
-
-
     // Read the questions with their answers and finalize
     for (size_t i = 0; i < random_numbers.size(); i++) {
         int rd = random_numbers[i] - 1;
@@ -184,9 +178,7 @@ void quiz(){
         std::cout << "Answer: ";
         std::cin >> user_guess;
         user_guess = std::toupper(user_guess);
-        // user_guess = static_cast<char>(std::toupper(static_cast<unsigned char>(user_guess)));
-
-
+      
         while (user_guess != 'A' && user_guess != 'B' && user_guess != 'C' && user_guess != 'D') {
             std::cout << "Invalid answer! Choose A, B, C or D.\n";
             std::cout << "Answer: ";
@@ -211,5 +203,5 @@ void quiz(){
     std::cout << "===============================================================\n\n\n";
 
     std::cout << "\tThank you for playing!\n\n";
-    std::cout << "\t\tCreator: LORVENSOFD\n";
+    std::cout << "\t\tCreator: EL\n";
 }

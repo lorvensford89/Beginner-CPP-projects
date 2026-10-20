@@ -50,11 +50,8 @@ void todo_list() {
 
 	} while (choice != 27); // ESC
 
-
-
 	std::cout << "\n\n\tThank you for using EL TO-DO LIST.\n\n";
-	std::cout << "\t\t\tCreator: " << "LORVENSFORD\n\n";
-
+	std::cout << "\t\t\tCreator: " << "EL\n\n";
 }
 
 void add_task(std::vector<std::string>& todo_list) {
@@ -106,7 +103,6 @@ void view_tasks(const std::vector<std::string>& todo_list) {
 			std::cout << "-------------------------------\n";
 		}
 	}
-
 }
 
 void delete_tasks(std::vector<std::string>& todo_list) {
@@ -134,5 +130,4 @@ void delete_tasks(std::vector<std::string>& todo_list) {
 	else {
 		std::cout << "\nInvalid task number.\n";
 	}
-
 }

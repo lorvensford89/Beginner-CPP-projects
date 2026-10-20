@@ -49,7 +49,6 @@ void tic_tac_toe() {
 			break;
 		}
 	}
-
 }
 
 void draw_board(const std::vector<char>& spaces) {
@@ -77,7 +76,6 @@ void player_move(std::vector<char>& spaces, char player) {
 		}
 		number--;
 
-
 		if (number < 0 || number > 8) {
 			std::cout << std::setw(60) << "Invalid input! Enter the number of your mark (1-9) >> ";
 			continue;
@@ -90,7 +88,6 @@ void player_move(std::vector<char>& spaces, char player) {
 
 		spaces[number] = player;
 		break;
-
 
 	} while (true);
 }
@@ -160,8 +157,6 @@ bool checking_winner(const std::vector<char>& spaces, char player, char computer
 		else
 			std::cout << "\n\n\t\t\t\tCOMPUTER WINS!\n\n";
 		return true;
-
-
 	}
 
 	// second diagonal (2,4,6)
@@ -172,7 +167,6 @@ bool checking_winner(const std::vector<char>& spaces, char player, char computer
 			std::cout << "\n\n\t\t\t\tCOMPUTER WINS!\n\n";
 		return true;
 	}
-
 	return false;
 }
 

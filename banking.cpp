@@ -4,7 +4,8 @@
 #include <string>
 #include <iomanip>
 #include <sstream>
-#include "functions.hpp"
+
+#include "header.hpp"
 
 void show_balance(double balance);
 double deposit();
@@ -20,8 +21,6 @@ void banking() {
     char character;
     double balance = 0;
     vector<string> history;
-
-	
 
     do {
         system("cls");

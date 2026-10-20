@@ -3,7 +3,6 @@
 // and he will have only two attempts to get the right word. 
 // If he misses the first attempt I will give him a hint of in which area the word is
 
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -38,7 +37,6 @@ void guessing_word() {
 	}
 	std::cout << "\n\n";
 
-
 	std::string user_guess;
 	int computer_guess_number;
 	std::string computer_guess_string("word");
@@ -47,7 +45,6 @@ void guessing_word() {
 	std::mt19937 gen(rd());
 	std::uniform_int_distribution<> distr(1, 15);
 	computer_guess_number = distr(gen);
-
 
 	if (computer_guess_number == 1 || computer_guess_number == 2 || computer_guess_number == 3) {
 		for (size_t i = 0; i < words.size() - 4; i++) {
@@ -105,13 +102,12 @@ void guessing_word() {
 		}
 
 	}
-	//std::cout << computer_guess_string << std::endl;
 
 	std::cout << "-------------------------------------------------------------------\n";
 	std::cout << "\n\nYou have two(2) attempts to guess the right word.\n";
 	std::cout << "It is in one these categories above.\n\n";
 
-	int attempt = 0;
+	int attempt{0};
 	const int max_attempt = 2;
 
 	while (attempt < max_attempt) {
@@ -142,7 +138,6 @@ void guessing_word() {
 							std::cout << " - The word is in category " << categories[i] << "\n";
 							break;
 						}
-
 			}
 			else {
 				std::cout << "\nYou lost!\n\n";
@@ -154,8 +149,5 @@ void guessing_word() {
 	}
 	std::cout << "\n\n=====================================================================\n\n";
 
-
-
-
-	std::cout << "\n\n\tThank you for playing GUESSING WORD GAME! \n\n\t\t\tCreator: Lorvensford\n\n";
+	std::cout << "\n\n\tThank you for playing GUESSING WORD GAME! \n\n\t\t\tCreator: EL\n\n";
 }

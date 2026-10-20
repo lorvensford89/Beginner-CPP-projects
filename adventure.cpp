@@ -1,6 +1,5 @@
 // This is a text based adventure project; this is my first time doing it
 
-
 #include <iostream>
 #include <string>
 #include <limits>

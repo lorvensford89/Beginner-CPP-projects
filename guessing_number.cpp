@@ -1,9 +1,10 @@
-// Guessing number project
 /*
-Here is the rule of the game:
-The computer generates 10 random numbers from 1 to 10, they will be shown,
-the user has 3 attempts to get the right one and it will calculate their
-accuracy.
+Guessing number project:
+
+    Here is the rule of the game:
+    The computer generates 10 random numbers from 1 to 10, they will be shown,
+    the user has 3 attempts to get the right one and it will calculate their
+    accuracy.
 */
 
 #include <iostream>
@@ -13,7 +14,6 @@ accuracy.
 #include <iomanip>
 
 bool is_number_in_vector(const std::vector<int>& numbers, int user_choice);
-
 
 void guessing_number() {
 
@@ -48,8 +48,6 @@ void guessing_number() {
 			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 			std::cout << "Invalid input." << std::endl << std::endl;
 			std::cout << "Pick a number: ";
-
-
 		}
 
 		attempt++;
@@ -72,8 +70,6 @@ void guessing_number() {
 				std::cout << "Accuracy:: " << double(100 / accuracy) << "%\n";
 			}
 
-
-
 			// Display the chosen random numbers
 			std::cout << "\nThe numbers = {";
 			for (int i = 0; i < SIZE; i++) {
@@ -82,7 +78,6 @@ void guessing_number() {
 					std::cout << ", ";
 			}
 			std::cout << "}" << std::endl;
-
 			break;
 		}
 		else {
@@ -106,11 +101,9 @@ void guessing_number() {
 			}
 			continue;
 		}
-
-
 	}
 
-	std::cout << "\n\nThank you for playing! \n\n\t\tCreator: Lorvensford\n\n";
+	std::cout << "\n\nThank you for playing! \n\n\t\tCreator: EL\n\n";
 }
 
 bool is_number_in_vector(const std::vector<int>& numbers, int user_choice) {
